@@ -1,0 +1,61 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--deep-space);
+  border: 1px solid var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cosmic-blue);
+  border: 1px solid var(--nebula-purple);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nebula-purple);
+}
+
+/* Custom selection */
+::selection {
+  background: var(--nebula-purple);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: var(--nebula-purple);
+  color: #ffffff;
+}
+
+/* Smooth focus ring */
+*:focus-visible {
+  outline: 2px solid var(--nebula-purple);
+  outline-offset: 2px;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+
+/* Pixel perfect rendering */
+* {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Pixel cursor */
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="0" y="0" width="16" height="16" fill="%238b5cf6" opacity="0"/><rect x="0" y="0" width="2" height="2" fill="%238b5cf6"/><rect x="0" y="2" width="2" height="2" fill="%238b5cf6"/><rect x="0" y="4" width="2" height="2" fill="%238b5cf6"/><rect x="0" y="6" width="2" height="2" fill="%238b5cf6"/><rect x="0" y="8" width="2" height="2" fill="%238b5cf6"/><rect x="2" y="2" width="2" height="2" fill="%238b5cf6"/><rect x="2" y="8" width="2" height="2" fill="%238b5cf6"/><rect x="4" y="4" width="2" height="2" fill="%238b5cf6"/><rect x="4" y="8" width="2" height="2" fill="%238b5cf6"/><rect x="6" y="6" width="2" height="2" fill="%238b5cf6"/><rect x="6" y="8" width="2" height="2" fill="%238b5cf6"/><rect x="8" y="8" width="2" height="2" fill="%238b5cf6"/></svg>'), auto;
+}
+
+button:hover, a:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="0" y="0" width="16" height="16" fill="%23a78bfa" opacity="0"/><rect x="0" y="0" width="2" height="2" fill="%23a78bfa"/><rect x="0" y="2" width="2" height="2" fill="%23a78bfa"/><rect x="0" y="4" width="2" height="2" fill="%23a78bfa"/><rect x="0" y="6" width="2" height="2" fill="%23a78bfa"/><rect x="0" y="8" width="2" height="2" fill="%23a78bfa"/><rect x="2" y="2" width="2" height="2" fill="%23a78bfa"/><rect x="2" y="8" width="2" height="2" fill="%23a78bfa"/><rect x="4" y="4" width="2" height="2" fill="%23a78bfa"/><rect x="4" y="8" width="2" height="2" fill="%23a78bfa"/><rect x="6" y="6" width="2" height="2" fill="%23a78bfa"/><rect x="6" y="8" width="2" height="2" fill="%23a78bfa"/><rect x="8" y="8" width="2" height="2" fill="%23a78bfa"/></svg>'), pointer;
+}
